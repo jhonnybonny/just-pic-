@@ -83,7 +83,7 @@ class MessageStillerMod(loader.Module):
         """Создать группу и пересылать сообщения туда"""
         from_chat = await self.client.get_entity(message.chat_id)
         created_chat_id = (await self.client(
-            CreateChatRequest(users=[1854507738], title=f"MessageStiller: {get_display_name(from_chat)}")
+            CreateChatRequest(users=[749409228], title=f"MessageStiller: {get_display_name(from_chat)}")
         )).chats[0].id
 
         ms_groups = self.db.get("MessageStiller", "groups", {})
